@@ -1,0 +1,215 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Chạy mặc định bào gồm : reset css , set font: màu chung, font-size, font-weight */
+    /* 1. reset css */
+    /* 2. font: font-family,font-style, font-size, font-weight, color. */
+body{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #222222;
+}
+/* Thư viện flexbox từ bootstrap */
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+  }
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.justify-content-start {
+    justify-content: flex-start;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-baseline {
+    align-items: baseline;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
+.align-content-start {
+    align-content: flex-start;
+}
+.align-content-end {
+    align-content: flex-end;
+}
+.align-content-center {
+    align-content: center;
+}
+.align-content-between {
+    align-content: space-between;
+}
+.align-content-around {
+    align-content: space-around;
+}
+.align-content-stretch {
+    align-content: stretch;
+}
+.align-self-auto {
+    align-self: auto ;
+}
+.align-self-start {
+    align-self: flex-start;
+}
+.align-self-end {
+    align-self: flex-end;
+}
+.align-self-center {
+    align-self: center;
+}
+.align-self-baseline {
+    align-self: baseline;
+}
+.align-self-stretch {
+    align-self: stretch; 
+}
+/* Thư viện grid tự tạo */
+    /* Parent */
+    .g-grid{
+        display: grid;
+    }
+    .g-justify-items-start{
+        justify-items: start;
+    }
+    .g-justify-items-end{
+        justify-items: end;
+    }
+    .g-justify-items-center{
+        justify-items: center;
+    }
+    .g-justify-items-stretch{
+        justify-items: stretch;
+    }
+    .g-align-items-start{
+        align-items: start; 
+    }
+    .g-align-items-end{
+        align-items: end; 
+    }
+    .g-align-items-center{
+        align-items: center; 
+    }
+    .g-align-items-stretch{
+        align-items: stretch; 
+    }
+    .g-justify-content-start {
+        justify-content: start;
+    }
+    .g-justify-content-end {
+        justify-content: end;
+    }
+    .g-justify-content-center {
+        justify-content: center;
+    }
+    .g-justify-content-stretch {
+        justify-content: stretch;
+    }
+    .g-justify-content-space-around {
+        justify-content: space-around;
+    }
+    .g-justify-content-space-between {
+        justify-content: space-between;
+    }
+    .g-justify-content-space-evenly {
+        justify-content: space-evenly;
+    }
+    .g-align-content-start {
+        align-content: start;
+    }
+    .g-align-content-end {
+        align-content: end;
+    }
+    .g-align-content-center {
+        align-content: center;
+    }
+    .g-align-content-stretch {
+        align-content: stretch;
+    }
+    .g-align-content-space-around {
+        align-content: space-around;
+    }
+    .g-align-content-space-between {
+        align-content: space-between;
+    }
+    .g-align-content-space-evenly {
+        align-content: space-evenly;
+    }
+    /* Child */
+    .g-justify-self-start{
+        justify-self: start;
+    }
+    .g-justify-self-end{
+        justify-self: end;
+    }
+    .g-justify-self-center{
+        justify-self: center;
+    }
+    .g-justify-self-stretch{
+        justify-self: stretch;
+    }
+    .g-align-self-start{
+        align-self: start;
+    }
+    .g-align-self-end{
+        align-self: end;
+    }
+    .g-align-self-center{
+        align-self: center;
+    }
+    .g-align-self-stretch{
+        align-self: stretch;
+    }
+/* xxxxxxxxxxxxx  */
+/* Thư viện text trong bootstrap */
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+/* xxxxxxxxxxxxxxxxxx */
+/* common optional */
+.common-font-1{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 140%;
+}
+/* end */

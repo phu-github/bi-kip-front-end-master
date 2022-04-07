@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <!--css custome menu -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="wapper-mouse-event">
+            <h1>Follow cursor | Javascript</h1>
+            <div id="cursor"></div>
+        </div>
+        <script type="text/javascript">
+            var cursor = document.getElementById('cursor');
+            document.addEventListener('mousemove', function(e){
+                var x = e.clientX;     // Tọa độ con trỏ 
+                var y = e.clientY;     // Tọa độ con trỏ 
+                cursor.style.left = x + "px";   
+                cursor.style.top = y + "px";
+            });
+        </script>
+    </body>
+</html>

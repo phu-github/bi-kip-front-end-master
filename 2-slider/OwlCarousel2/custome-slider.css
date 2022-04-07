@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    /* OwlCarousel2 */
+    --slider-width: 90%;  /* chiều rộng slider */
+    --color-prev-next-hover: transparent;  /* Màu khi hover vào prev /next button */
+    --spacing-prev-next: 2rem; /* Căn chỉnh vị trí prev /next */
+}
+/* OwlCarousel2 */
+.wapper-slider-1{
+    width: var(--slider-width);
+    height: auto;
+    margin: 0 auto;
+}
+.wapper-slider-1 .owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--color-prev-next-hover);
+    color: #FFF;
+    text-decoration: none;
+}
+.wapper-slider-1__prev , .wapper-slider-1__next{
+    width: 40px;
+    height: 40px;
+}
+.wapper-slider-1 .owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wapper-slider-1 .owl-prev {
+  left: -2rem;
+}
+.wapper-slider-1 .owl-next {
+  right: -2rem;
+}
+.wapper-slider-1 .owl-dots {
+    position: absolute;
+    width: 100%;
+}

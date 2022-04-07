@@ -1,0 +1,66 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    font-family: 'Montserrat';
+    font-size: 12px;
+    }   
+:root{
+    --color-primary: #eff3f6; /* Màu chữ chính */
+    --background-primary: #F7F8FA; /* Màu nền chính  */
+    --fontsize-primary: 16px; /* Cỡ chữ chính  */
+    --color-second: #20E6B9;  /* Màu chữ phụ 1 */
+    --background-second: #20E6B9; /* Màu nền phụ 1 */
+    --fontsize-secondary: 14px; /* Cỡ chữ phụ 1  */
+
+    /* Main Layout */
+    --width-layout:100%  /* Width of the entire layout  */
+
+}
+/* xxxxxxxxxxxxxxxxxxxx */
+.page-grid-layout{
+    display: grid;
+    width: var(--width-layout) ;
+    margin: 0 auto;
+    grid-template: 
+    "header  header   header" 1fr
+    "menu    menu     menu" 2fr
+    "banner  banner   banner" 4fr
+    "content content  content " auto
+    "footer  footer   footer" 2fr
+    /1fr     1fr      1fr;
+}
+.page-grid-layout__item{
+    border:1px solid black;
+}
+.wrapper-header{
+    grid-area: header;
+}
+.wrapper-menu{
+    grid-area: menu;
+}
+.wrapper-banner{
+    grid-area: banner;
+}
+
+.wrapper-content{
+    grid-area: content;
+}
+.wrapper-footer{
+    grid-area: footer;
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+/*PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px){
+    
+}

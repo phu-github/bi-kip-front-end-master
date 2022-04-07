@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý hình ảnh</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid-container{
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .grid-item{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.5fr 1fr;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 10px 0;
+        }
+        .fill{
+            object-fit: fill;
+        }
+        .contain{
+            object-fit: contain;
+        }
+        .scale-down{
+            object-fit: scale-down;
+        }
+        .cover{
+            object-fit: cover;
+            object-position: 10px 10px;
+        }
+        .grid-container-bg-image{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .grid-image{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 400px;       
+        }
+        .option-1{
+            background-repeat: no-repeat;
+            width: 100%;
+            background-image: url("./images/banner_services.jpg");
+        }
+        .option-2{
+            width: 100%;
+            background-repeat: no-repeat;
+            background-image: url("./images/banner_services.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .option-3{
+            width: 100%;
+            background-repeat: no-repeat;
+            background-image: url("./images/banner_services.jpg");
+            background-size: contain;
+        }
+
+    </style>
+    <h1>Object-fit</h1>
+    <p>kích thước của hình ảnh gốc: 236x213</p>
+    <p>khung image khi set width và height: 200 x 300</p>
+    <div class="grid-container">
+        <!-- grid-item-1 -->
+        <div class="grid-item">
+            <h2>object-fit: fill</h2>
+            <p>fill (mặc định) : Tấm hình sẽ được co lại / dãn ra theo tỷ lệ (aspect ratio) của width và height</p>
+            <img class="fill" src="./images/dog.jpg"  alt="#" />
+        </div>
+
+        <!-- grid-item-2 -->
+        <div class="grid-item">
+            <h2>object-fit: contain</h2>
+            <p>contain: Tấm hình sẽ giữ nguyên tỉ lệ (aspect ratio). Kích thước Được lấy theo width, Rồi tình toán ra height sao cho tầm hình vẫn giữ nguyên tỉ lệ (aspect ratio)</p>
+            <img class="contain" src="./images/dog.jpg"  />
+        </div>
+
+        <!-- grid-item-3 -->
+        <div class="grid-item">
+            <h2>object-fit: scale-down</h2>
+            <p>scale-down: giá trị này hơi phức tạp nếu kích thước gốc của ảnh nhỏ hơn chiều rộng và chiều dài của khung thì giá trị này tương đương với giá trị none, nếu ngược lại thì giá trị này tương đương giá trị contain. none - Hình ảnh không được thay đổi kích thước</p>
+            <img class="scale-down" src="./images/dog.jpg" alt="" />  
+        </div>
+
+        <!-- grid-item-4 -->
+        <div class="grid-item" >
+            <h2>object-fit: cover </h2>
+            <p>cover (fill + contain) Hình ảnh giữ tỷ lệ khung hình của nó và lấp đầy kích thước đã cho. Hình ảnh sẽ được cắt để phù hợp. Sử dụng <strong>Object-postion: "left top"</strong> để điểu chỉnh vị trị hình</p>
+            <img class="cover" src="./images/dog.jpg" alt="" />  
+        </div>
+    </div>
+    <h1>Background image</h1>
+    <p>kích thước của hình ảnh gốc: 1500 x 370</p>
+    <p>background-image: url()</p>
+    <p>background-repeat: repeat-x | repeat-y | no-repeat | repeat* </p>
+    <p>background-size: % | px | contain | cover | auto* </p>
+    <p>background-postion: x y | center</p>
+    <p>background-attachment: scroll* | fixed</p>
+    <p>* : mặc định</p>
+    <div class="grid-container-bg-image">
+        <!-- Kiểu 1 -->
+        <div class="grid-image">
+            <h2>option 1</h2>
+            <div class="option-1"></div>
+        </div>
+        <!-- Kiểu 2 -->
+        <div class="grid-image">
+            <h2>Không thay đổi kích thước image, responsive sẽ cắt 2 mép left right của hình(Ảnh phải lớn)</h2>
+            <div class="option-2"></div>
+        </div>
+        <!-- kiểu 3 -->
+        <div class="grid-image">
+            <h2>option 1</h2>
+            <div class="option-3"></div>
+        </div>
+    </div>
+</body>
+</html>

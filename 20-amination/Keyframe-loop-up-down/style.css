@@ -1,0 +1,60 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+body {
+/* font-family: 'Montserrat Alternates', sans-serif; */
+    font-family: 'Montserrat';
+    font-size: 12px;
+/* overflow: hidden; */
+}
+
+:root{
+    --color-primary: #eff3f6; /* Màu chữ chính */
+    --background-primary: #F7F8FA; /* Màu nền chính  */
+    --fontsize-primary: 16px; /* Cỡ chữ chính  */
+    --color-second: #20E6B9;  /* Màu chữ phụ 1 */
+    --background-second: #20E6B9; /* Màu nền phụ 1 */
+    --fontsize-secondary: 14px; /* Cỡ chữ phụ 1  */
+
+}
+.wapper{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /* background: #333; */
+    overflow: hidden;
+}
+.juice{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -46%);
+    animation: orangeUpDown 4s ease-in-out infinite;
+    
+}
+.juice img {
+    max-height: 600px;
+}
+
+/* Từ 0% đến 50% là 50% thời gian của 4 giây (tức là 2 giây). Trong khoảng thời gian 2 giây phần tử sẽ được chuyển từ vị trí top -46px xuống -50px */
+/* translate(trục X, trục Y);   X tăng dần: dịch qua phải, Y tăng dần : dịch xuống dưới */ 
+@keyframes orangeUpDown {
+    0% {
+        transform: translate(-50%, -46%);  
+    }
+    50% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -46%);
+    }
+}
+  
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <!--css custome menu -->
+        <link rel="stylesheet" href="style1.css">
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    </head>
+    <body>
+        <div class="wapper">
+            <div class="juice">
+                <img src="./images/juice.png" alt="">
+            </div>
+
+            <div class="leaves">
+              <ul id="scene">
+                <li class="layer_1" data-depth="-.1">
+                  <img class="parallax_img_1" src="./images/leaf01.png" alt="">
+                </li>
+                <li class="layer_2" data-depth=".1">
+                  <img class="parallax_img_2" src="./images/leaf02.png" alt="">
+                </li>
+                <li class="layer_3" data-depth="-1.5">  
+                  <img class="parallax_img_3" src="./images/leaf03.png" alt="">
+                </li>
+                <li class="layer_4" data-depth="-.1">
+                  <img class="parallax_img_4" src="./images/leaf04.png" alt="">
+                </li>
+                <li class="layer_5" data-depth=".3">
+                  <img class="parallax_img_5" src="./images/leaf05.png" alt="">
+                </li>
+              </ul>
+            </div>
+        </div>
+<!--  -->
+        <script>
+          var scene = document.getElementById('scene');
+          var parallax = new Parallax(scene);
+        </script>  
+    </body>
+</html>

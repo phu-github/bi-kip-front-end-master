@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <!--css custome menu -->
+        <link rel="stylesheet" href="custome-menu.css">
+        
+        <!--JS Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--Js custome-menu -->
+        <script src="custome-menu.js"></script>
+    </head>
+    <body>
+        <div class="wrapper-menu">
+            <div class="wrapper-menu__logo">
+                <img class="wrapper-menu__logo__img" src="./images/nike-lich-su-thiet-ke-logo.jpg">
+                <div class="wrapper-menu__logo__text">CLEAN JUICE</div>
+            </div>
+            <nav class="wrapper-menu__nav">
+                <ul class="wrapper-menu__nav__links">
+                    <li class="wrapper-menu__nav__links__item">
+                        <svg class="wrapper-menu__nav__links__exit" aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true">
+                            <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+                        </svg>
+                    </li>
+                    <li class="wrapper-menu__nav__links__item"><a href="#">meet our team</a></li>
+                    <li class="wrapper-menu__nav__links__item"><a href="#">Project</a></li>
+                    <li class="wrapper-menu__nav__links__item"><a href="#">News</a></li>
+                    <li class="wrapper-menu__nav__links__item" id="submenu-1">
+                        <a href="#">Dropdown</a>
+                        <ul class="submenu-1__links active">
+                            <li class="submenu-1__links__item"><a href="#">Drop down 1</a></li>
+                            <li class="submenu-1__links__item"><a href="#">Drop down 2</a></li>
+                            <li class="submenu-1__links__item"><a href="#">Drop down 3</a></li>
+                        </ul>
+                    </li>
+                </ul>   
+            </nav>
+            <a class="wrapper-menu__btn-contact" href="#">Contact</a> 
+            <div class="wrapper-menu__bar">
+                <div class="wrapper-menu__bar__item"></div>
+                <div class="wrapper-menu__bar__item"></div>
+                <div class="wrapper-menu__bar__item"></div>
+            </div>  
+        </div>
+
+    </body>
+</html>

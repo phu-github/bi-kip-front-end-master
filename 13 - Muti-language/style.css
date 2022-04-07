@@ -1,0 +1,72 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    font-family: 'Montserrat';
+    font-size: 12px;
+  }
+:root{
+    --color-primary: #eff3f6; /* Màu chữ chính */
+    --background-primary: #F7F8FA; /* Màu nền chính  */
+    --fontsize-primary: 16px; /* Cỡ chữ chính  */
+    --color-second: #20E6B9;  /* Màu chữ phụ 1 */
+    --background-second: #20E6B9; /* Màu nền phụ 1 */
+    --fontsize-secondary: 14px; /* Cỡ chữ phụ 1  */
+
+}
+/* language */
+.wrapper-menu__lang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-menu__lang__selected{
+    width: 85px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+}
+.wrapper-menu__lang__selected::before, .wrapper-menu__lang__list__vie::before,.wrapper-menu__lang__list__en::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: auto;
+    background: url('images/vietnam.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.wrapper-menu__lang__selected::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: auto;
+    background: url('images/arrow-down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5px;
+}
+.wrapper-menu__lang__list{
+    Width :108px;
+    Height:112px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* end language */

@@ -1,0 +1,33 @@
+/* Arrow, left ,right, up, dow */
+#arrow-up{
+    height: 0px;
+    width: 0px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid green;
+    border-left: 20px solid transparent;
+}
+#arrow-down{
+    height: 0px;
+    width: 0px;
+    border-top: 20px solid red;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+#arrow-left{
+    height: 0px;
+    width: 0px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid yellow;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+#arrow-right{
+    height: 0px;
+    width: 0px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid blue;
+}

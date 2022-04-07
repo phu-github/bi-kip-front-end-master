@@ -1,0 +1,12 @@
+
+/* code */
+.field-manager-icon:before{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #279DD8;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+}

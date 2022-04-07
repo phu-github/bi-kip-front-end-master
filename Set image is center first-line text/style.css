@@ -1,0 +1,17 @@
+
+.parent {
+    display: table;
+    width: 800px;
+    height: 100px;
+    background-color: gray;
+  }
+  .image{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .parent > * {
+    display: table-cell;
+  }
+  .child {   /* Nếu nó lêch thì thử bỏ thuộc tính này */
+    vertical-align: top;    
+  }
